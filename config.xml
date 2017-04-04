@@ -2,7 +2,7 @@
 
 <widget xmlns = "http://www.w3.org/ns/widgets"
   xmlns:gap = "http://phonegap.com/ns/1.0"
-  id = "com.phonegap.example1"
+  id = "com.phonegap.example2"
   version = "1.0.0">
   
   <name> app2 TELEFONIACELULAR</name>
@@ -37,7 +37,7 @@
   
   <icon src="res/android/mdpi.png"/>
   
-  </widget>
+
  <!--para accesar a paginas en internet-->
  <allow-intert hret="https://*/*"/>
  <acces origin="https://*/*"/>
@@ -45,7 +45,5 @@
   <acces origin="http://*/*"/>
   <plugin name="cordova-plugin-whitelist" source="npm"/>
   
-<!--Colocar icono app-->
-  
- <icono src="res/android/mdpi.png>
+
  </widget>
