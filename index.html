@@ -1,0 +1,386 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Segunda Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/tema-app2a.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>-->
+<!--grupo JavaScript-->
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/telefono.png','imagenes/mo.png','imagenes/ando.png','imagenes/alta.png')">
+
+<div data-role="page" id="Principal" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regrsar" data-back-btn-theme="a">
+<h1> TELEFONIA CELULAR </h1>
+</div>
+<div data-role="main" class="ui-content"><!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+        <li><img src="data1/images/alta.png" alt="alta" title="alta" id="wows1_0"/></li>
+		<li><img src="data1/images/ando.png" alt="ando" title="ando" id="wows1_1"/></li>
+		<li><img src="data1/images/futu.png" alt="futu" title="futu" id="wows1_2"/></li>
+		<li><img src="data1/images/no.png" alt="no" title="no" id="wows1_3"/></li>
+		<li><img src="data1/images/mo.png" alt="mo" title="mo" id="wows1_4"/></li>
+		<li><img src="data1/images/telefono.png" alt="telefono" title="telefono" id="wows1_5"/></li>
+		<li><a href="http://wowslider.net"><img src="data1/images/nokia.png" alt="http://wowslider.net/" title="nokia" id="wows1_6"/></a></li>
+		<li><img src="data1/images/retro.png" alt="retro" title="retro" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="alta"><span><img src="data1/tooltips/alta.png" alt="alta"/>1</span></a>
+		<a href="#" title="ando"><span><img src="data1/tooltips/ando.png" alt="ando"/>2</span></a>
+		<a href="#" title="futu"><span><img src="data1/tooltips/futu.png" alt="futu"/>3</span></a>
+		<a href="#" title="no"><span><img src="data1/tooltips/no.png" alt="no"/>4</span></a>
+		<a href="#" title="mo"><span><img src="data1/tooltips/mo.png" alt="mo"/>5</span></a>
+		<a href="#" title="telefono"><span><img src="data1/tooltips/telefono.png" alt="telefono"/>6</span></a>
+		<a href="#" title="nokia"><span><img src="data1/tooltips/nokia.png" alt="nokia"/>7</span></a>
+		<a href="#" title="retro"><span><img src="data1/tooltips/retro.png" alt="retro"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">jquery carousel</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+<div data-role="collapsible" data-content-theme="false">
+<h1> Foto </h1>
+<div>
+<p> Esta es la imagen:</p>
+<br>
+</div>
+<div>
+  <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','imagenes/telefono.png',1)"><img src="imagenes/movil.png" width="70%" height="70%" id="Image11"></a></p>
+</div>
+</div>
+</div>
+<div>
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>¿QUE ES LA TELEFONIA CELULAR?</h2>
+ <p> Se muestra que es</p>
+ </a>
+ </li>
+ <li class="ui-first-child ui-last-child">
+ <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2> HISTORIA DE LA TELEFONIA CELULAR</h2>
+  <p> Se muestra la historia</p>
+  </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+  <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2> CLASIFICACION DE LA TELEFONIA CELULAR</h2>
+  <p> Muestra la clasificacion</p>
+  </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+  <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>COMPAÑIAS QUE MANEJA LA TELEFONIA EN MEXICO</h2>
+  <p> Muestra las compañias</p>
+  </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+  <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2> TELEFONOS DEL FUTURO</h2>
+  <p>Muestra los telefonos</p>
+  </a>
+  </li>
+  </ul>
+  </div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+  <div>
+  <img src="imagenes/telefono.png" width="70" height="70">
+  </div>
+  <div>
+  <h4>Aplicaciones Dos</h4>
+  <h4>Luisa Quintero Flores</h4>
+  </div>
+  </div>
+  </div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>Telefono Celular</h1>
+  
+  </div>
+  <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1> Foto  </h1>
+<div>
+<p> Esta es la imagen :</p>
+<br>
+</div>
+<div>
+<img src="imagenes/movil.png" width="70%" height="70%"></div>
+</div>
+</div>
+  <div data-role="content" align="center">
+  <div>
+  <h2><P>¿QUE ES UN TELEFONO CELULAR?</P>
+  Aparato telefónico de pequeño o gran tamaño, portátil, sin hilos ni cables externos, para poder comunicarse desde cualquier lugar, siempre que sea dentro del área de cobertura del servicio que lo facilita. </h2>
+  </div>
+  </div>
+  <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1> Foto  </h1>
+<div>
+<p> Esta es la imagen :</p>
+<br>
+</div>
+<div>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image17','','imagenes/ando.png',1)"><img src="imagenes/llamada.png" width="70%" height="70%" id="Image17"></a></div>
+</div>
+</div>
+<div data-role="content" align="center">
+  <div>
+  <h2><P>¿PARA QUE NOS SIRVE UN TELEFONO CELULAR?</P>
+  Un telefono celular tiene muchas funciones, pero la principal funcion para los humanos es poder comunicarse con otra persona, navegar en internet, y que mejor que con un telefono que tenga todas las necesidades basicas para el ser humano.  </h2>
+  </div>
+  </div>
+  
+  <div data-role="footer" data-theme="b" data-position="fixed">
+  <h4> Aplicacion Dos, LQF</h4>
+  </div>
+  </div>
+  
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>HISTORIA DE LA TELEFONIA CELULAR</h1>
+  </div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1> Foto  </h1>
+<div>
+<p> Esta es mi imagen :</p>
+<br>
+</div>
+<div>
+<img src="imagenes/mo.png" width="70%" height="70%"></div>
+</div>
+</div>
+<div data-role="content" align="center">
+  <div>
+  <h2> La primera red comercial de telefonía móvil que el mundo vio nacer, fue en Japón a finales de los años 70, concretamente y para ser mas exactos en 1979, y su nombre fue NNT. A continuación le siguieron la estela los países nórdicos, tales como Suecia, Dinamarca, Noruega y Finlandia</h2></div>
+  </div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1> Foto</h1>
+<div>
+<p> Esta es la imagen:</p>
+<br>
+</div>
+<div>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','imagenes/mo.png',1)"><img src="imagenes/retro.png" width="70%" height="70%" id="Image18"></a></div>
+</div>
+</div>
+<div data-role="content" align="center">
+  <div>
+  <h2> El inventor del teléfono celular fue Martin Cooper, quien creó el Motorola DynaTAC 8000X, el primer teléfono inalábrico portátil, el cual resulta -para los estándares actuales- gigantescamente estorboso, pero que en us momento (~1973), fue una maravilla moderna.</h2></div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1> Foto </h1>
+<div>
+<p> Esta es la imagen :</p>
+<br>
+</div>
+<div>
+<img src="imagenes/coo.png" width="70%" height="70%"></div>
+</div>
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+  <h4>Aplicacion Dos, LQF</h4>
+  </div>
+  </div>
+  
+  
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1>CLASIFICACION DE LA TELEFONIA CELULAR</H1>
+   </div>
+   <div data-role="content" aling="center">
+    </div>
+       <h2> <p><center>GAMA ALTA</p>
+       
+        La gama alta:excelentes materiales, bien servicio post venta, actualizaciones por lo menos de 2 años, resolución HD, quad core, tamaño que no pase de 5", debe de tener no solo buenas características, sino algún plus, como serían las aplicaciones extras del Galaxy S4, el doble altavoz frontal del HTC One, las fantásticas cámaras de los buque insignia de Nokia y en fin, algo que marque la diferencia, ya que a la hora de rendir será similar a un gama media alta (al ir teóricamente muy bien los de ambos niveles).<br>
+         <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1> Foto  </h1>
+<div>
+<p> Esta es la imagen :</p>
+<br>
+</div>
+<div>
+<img src="imagenes/alta.png" width="70%" height="70%"></div>
+</div>
+</div>
+        <p><center>GAMA MEDIA-ALTA </p></center> accesible, materiales aceptables, resolución 480x800 como mínimo, dual core y jelly bean.<BR>
+         <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1> Foto </h1>
+<div>
+<p> Esta es la imagen:</p>
+<br>
+</div>
+<div>
+<img src="imagenes/media.png" width="70%" height="70%"></div>
+</div>
+</div>
+        <P><center>GAMA BAJA:</P></center> Gama baja: barato, single core, ics como mínimo, y como dicen los compradores de estas gamas "con que tenga whatsaap y facebook"</p></h2>
+         <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1> Foto  </h1>
+<div>
+<p> Esta es la imagen :</p>
+<br>
+</div>
+<div>
+<img src="imagenes/baja.png" width="70%" height="70%"></div>
+</div>
+</div>
+</div>
+     </div>
+      
+<div data-role="footer" data-theme="b" data-position="fixed">
+       <h4>Aplicacion Dos, LQF </h4>
+     </div>
+     </div>
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1>COMPAÑIA QUE MANEJAN LOS TELEFONOS CELULARES EN MEXICO</h1>
+    </div>
+      <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1> Foto  </h1>
+<div>
+<p> Esta es la imagen:</p>
+<br>
+</div>
+<div>
+<img src="imagenes/com.png" width="70%" height="70%"></div>
+</div>
+</div>
+    <div data-role="content" aling="center">
+      <div>
+         <h2><p><center>Planes y ofertas por compañía</p></center>
+           <a href="http://new.axtel.mx/" target="_self">Planes Axtel</a>.<br>
+<a href="https://www.unefon.com.mx/" target="_self">Planes Iusacell</a>.<br>
+<a href="https://www.unefon.com.mx/" target="_self">Planes Movistar.<br>
+<a href="https://www.unefon.com.mx/" target="_self">Planes Telcel.<br>
+</a><a href="https://www.unefon.com.mx/" target="_self">Planes Unefon</a>.</h2>
+      </div>
+    </div>
+      <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1> Foto  </h1>
+<div>
+<p> Esta es la imagen:</p>
+<br>
+</div>
+<div>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image16','','imagenes/alta.png',1)"><img src="imagenes/opera.png" width="70%" height="70%" id="Image16"></a></div>
+</div>
+</div>
+   <div data-role="footer" data-them="a" data-position="fixed">
+         <h4>Aplicacion Dos,LQF</h4>
+    </div>
+</div>
+
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="b">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+        <h1>TELEFONOS DEL FUTURO</h1>
+    </div>
+     
+    <div data-role="content" aling="center">
+       <div>
+         <h2><center><p>NOKIA MORPH 4.</p></center>
+         Nokia junto a la Universidad de Cambridge crearon un celular moldeable vía nanotecnología, denominado “Morph”.<br>
+Este celular es como salido de una película futurista. Lo más sorprendente es su increíble capacidad de moldearse en diferentes formas. Entre otro de sus atractivos destaca además su gran panel para ver videos. </h2></div>
+    </div>
+        <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1> Foto  </h1>
+<div>
+<p> Esta es la imagen:</p>
+<br>
+</div>
+<div>
+<img src="imagenes/no.png" width="70%" height="70%"></div>
+</div>
+</div>
+<div data-role="content" aling="center">
+       <div>
+<h2><center><p>NOKIA 888.</p></center>
+         Es el primer móvil flexible creado por el turco Tamer Nakisci, flamante ganador de los Premios de Diseño de los Países Bajos.<br>
+Está diseñado para otorgar la máxima libertad y diversión, ya que puede cambiar de forma según las necesidades del usuario, gracias a su batería líquida. Puedes llevarlo como pulsera, enrollado en el bolsillo o como prefieras. Cuando recibe una llamada adopta la forma de los teléfonos tradicionales. </h2></div>
+    </div>
+       <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1> Foto  </h1>
+<div>
+<p> Esta es la imagen:</p>
+<br>
+</div>
+<div>
+<img src="imagenes/nokia.png" width="70%" height="70%"></div>
+</div>
+</div>
+<div data-role="content" aling="center">
+       <div>
+<h2><center><p>NOKIA 888.</p></center>
+       Un móvil maleable presentado por NEC Design. Al igual que los modelos antes mencionados éste adopta diferentes formas, según el uso que le quieras dar.<br> 
+Está hecho de un material con memoria, que posee varios sensores de presión para que el teléfono cambie y adopte las distintas posiciones.. </h2></div>
+    </div>
+       <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1> Foto  </h1>
+<div>
+<p> Esta es la imagen:</p>
+<br>
+</div>
+<div>
+<img src="imagenes/nec.png" width="70%" height="70%"></div>
+</div>
+</div>
+    <div data-role="footer" data-theme="a" data-position="fixed">
+       <h4>Aplicacion Dos,LQF</h4>
+    </div>
+</div>
+
+       
+</body>
+</html>
